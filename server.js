@@ -6,6 +6,7 @@ const cors = require('cors');
 const passport = require('passport');
 require('./config/passport')(passport);
 const PORT = process.env.PORT || 8000;
+const mongoose = require('mongoose');
 
 // API
 const users = require('./api/users');
